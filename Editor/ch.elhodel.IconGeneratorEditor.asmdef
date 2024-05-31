@@ -1,0 +1,19 @@
+{
+    "name": "ch.elhodel.IconGeneratorEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f909e473846a9d649b100f452324d3ee",
+        "GUID:62327273050ac9448a2732ff4c05de1c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

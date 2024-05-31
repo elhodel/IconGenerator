@@ -1,0 +1,28 @@
+{
+  "name": "ch.elhodel.icon-generator",
+  "version": "0.0.1",
+  "displayName": "Icon Generator",
+  "description": "This package provides an icon generator that generates unique icons when building to keep track of different versions.",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+
+  "author": {
+    "name": "elhodel",
+    "url": "https://github.com/elhodel/"
+  },
+  
+   "dependencies": {
+	  "ch.elhodel.easy-editor-settings": "0.0.1"
+  },
+
+   "scopedRegistries": [
+    {
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "ch.elhodel"
+      ]
+    }
+  ]
+ 
+}
