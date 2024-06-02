@@ -12,7 +12,8 @@
   },
   
    "dependencies": {
-	  "ch.elhodel.easy-editor-settings": "0.0.1"
+	  "ch.elhodel.easy-editor-settings": "0.0.1",
+	  "com.unity.textmeshpro": "3.0.6"
   },
 
    "scopedRegistries": [
