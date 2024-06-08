@@ -43,11 +43,25 @@ namespace elhodel.IconGenerator
         [ContextMenu("Update Content")]
         public void UpdateContent()
         {
+            _background.texture = _iconSettings.Background;
+
+            if (_iconSettings.FontAsset != null)
+            {
+                _projectNameField.font = _iconSettings.FontAsset;
+            }
+
             _projectNameField.gameObject.SetActive(_iconSettings.ShowProjectName);
             _projectNameField.text = Application.productName;
 
             _timestampField.gameObject.SetActive(_iconSettings.ShowTimestamp);
-            _timestampField.text = DateTime.Now.ToString("yyMMdd_HHmmss");
+
+            string timestampFormat = "yyMMdd_HHmmss";
+            if(!string.IsNullOrWhiteSpace(_iconSettings.TimestampFormat))
+            {
+                timestampFormat = _iconSettings.TimestampFormat;
+            }
+
+            _timestampField.text = DateTime.Now.ToString(timestampFormat);
 
             _versionField.gameObject.SetActive(_iconSettings.ShowVersion);
             _versionField.text = Application.version;
@@ -105,10 +119,7 @@ namespace elhodel.IconGenerator
 
         }
 
-        public void SetBackground(Texture2D background)
-        {
-            _background.texture = background;
-        }
+
     }
 
 
